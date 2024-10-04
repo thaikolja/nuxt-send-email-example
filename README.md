@@ -1,6 +1,6 @@
 # Nuxt Send Email Example
 
-A simple example project to demonstrate how to use **Nuxt 3**, **Node.js**, and **`nodemailer`** to send emails via a form. This is the first version of this example project, with more thorough explanations to come. A comment-free version will be uploaded to the `uncommented` branch shortly.
+A simple example project to demonstrate how to use [**Nuxt 3**](https://nuxt.com/), [**Node.js**,](https://nodejs.org/en/download/package-manager/current) and **[Nodemailer](https://www.npmjs.com/package/nodemailer)** to send emails via a form. This is the first version of this example project, with more thorough explanations to come. A comment-free version will be uploaded to the `uncommented` branch shortly.
 
 ![screenshot-2024-10-04-gKm1jprv@2x](https://raw.githubusercontent.com/thaikolja/assets/main/markdown/a829a224660b5b7417e4460408bdb866.png)
 
@@ -21,7 +21,7 @@ To get started with this project, follow these steps:
    cd nuxt-send-email-example
    ```
 
-2. **Install dependencies**:
+2. **Install dependencies** listed in `package.json`:
    
    ```bash
    yarn install # or bun i; or npm i
@@ -39,21 +39,21 @@ To get started with this project, follow these steps:
 
 ## Usage
 
-To run the project locally, use the following command:
+1. To run the project locally, use the following command:
 
 ```bash
 yarn dev # or bun dev; or npm run dev
 ```
 
-This will start the Nuxt development server. You can access the application at [`http://localhost:3000`](`http://localhost:3000`).
+2. This will start the Nuxt development server. You can access the application at [`http://localhost:3000`](`http://localhost:3000`).
 
-Then, fill out the form and click "Send E-Mail" to immediately receive an email to the target (`to address`).
+3. Then, fill out the form and click "Send E-Mail" to immediately receive an email to the target (`to` address).
 
 ## Configuration
 
 The project uses a basic configuration setup:
 
-- **Nuxt Config**: Located in `nuxt.config.ts`, it sets up Tailwind CSS and basic meta tags.
+- **[Nuxt Config](https://nuxt.com/docs/api/nuxt-config)**: Located in `nuxt.config.ts`, it sets up Tailwind CSS and basic meta tags.
 - **Email Sending**: Configured in `server/api/email/send.post.ts` using `nodemailer`.
 
 ## Contribution
